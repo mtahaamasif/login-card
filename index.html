@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log into your Account - Saylani</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://googleapis.com" rel="stylesheet">
+  <link rel="stylesheet" href="https://cloudflare.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MASTER SPLIT CARD COMPONENT -->
+  <div class="auth-wrapper">
+    <div class="auth-container">
+      
+      <!-- LEFT ACTION SYSTEM CORE PANE -->
+      <div class="auth-left-pane">
+        
+        <!-- OFFICIAL TRANS-BACKED SAYLANI LOGO MARK -->
+        <div class="brand-logo">
+          <img src="/sit-logo-on-light.png" alt="Saylani IT Training">
+        </div>
+
+        <h2 class="pane-title">Log into your Account</h2>
+
+        <!-- CREDENTIAL ENTRY GROUP -->
+        <form class="login-form" onsubmit="event.preventDefault();">
+          
+          <div class="input-group">
+            <span class="input-icon"><i class="fa-regular fa-envelope"></i></span>
+            <input type="email" placeholder="iamchris_wallace@email.com" required>
+          </div>
+
+          <div class="input-group">
+            <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+            <input type="password" placeholder="Password" required>
+            <span class="password-toggle"><i class="fa-regular fa-eye-slash"></i></span>
+          </div>
+
+          <div class="forgot-password-row">
+            <a href="#" class="forgot-link">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="submit-btn">Sign in</button>
+
+        </form>
+
+        <!-- DELIMITATION BAR LAYOUT -->
+        <div class="divider-row">
+          <span>or</span>
+        </div>
+
+        <!-- OAUTH FEDERATED PROVIDERS -->
+        <div class="oauth-group">
+          <button class="oauth-btn">
+            <img src="https://wikimedia.org" alt="Google"> 
+            Sign in with Google
+          </button>
+          
+          <button class="oauth-btn">
+            <img src="https://wikimedia.org" alt="Facebook"> 
+            Sign in with Facebook
+          </button>
+          
+          <button class="oauth-btn">
+            <img src="https://wikimedia.org" alt="Apple" class="invert-img"> 
+            Sign in with Apple
+          </button>
+        </div>
+
+        <div class="footer-redirect">
+          Don't have an account? <a href="#">Create Account</a>
+        </div>
+
+      </div>
+
+      <!-- RIGHT DATA BACKDROP HERO LAYOUT PANE -->
+      <div class="auth-right-pane">
+        <img src="Screenshot 2026-10-16 022252.png"/>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

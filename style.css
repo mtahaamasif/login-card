@@ -1,0 +1,247 @@
+/* DESIGN COMPONENT BASE CONSTANTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+/* CONTAINER BOARD FRAMING CONFIG */
+.auth-wrapper {
+  width: 100%;
+  max-width: 1050px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.08);
+}
+
+.auth-container {
+  display: flex;
+  min-height: 660px;
+}
+
+/* INPUT COMPONENT MATRIX LAYOUT PANE */
+.auth-left-pane {
+  flex: 1;
+  background-color: #032b69; /* True Saylani Muted Corporate Dark Blue */
+  padding: 50px 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand-logo {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.brand-logo img {
+  height: 55px;
+  object-fit: contain;
+}
+
+.pane-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 26px;
+  letter-spacing: -0.4px;
+}
+
+/* INPUT CAPTURE FORMS STYLING */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.input-group input {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 15px 16px 15px 46px;
+  color: #ffffff;
+  font-size: 13.5px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.input-group input:focus {
+  border-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* BUTTON ACTION PROFILES */
+.forgot-password-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -2px;
+}
+
+.forgot-link {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  background-color: #1e60c4;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.15s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1551aa;
+}
+
+/* MID SECTION STRIP SPLITTER */
+.divider-row {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.divider-row::before,
+.divider-row::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.divider-row span {
+  padding: 0 12px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: lowercase;
+}
+
+/* THIRD-PARTY API CREDENTIAL ACCESS CONTROL BUTTONS */
+.oauth-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.oauth-btn {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.15s ease;
+}
+
+.oauth-btn:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.oauth-btn img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.oauth-btn img.invert-img {
+  filter: invert(1);
+}
+
+.footer-redirect {
+  text-align: center;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+}
+
+.footer-redirect a {
+  color: #2e7be6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-redirect a:hover {
+  text-decoration: underline;
+}
+
+.auth-right-pane {
+  flex: 1.2;
+  background-image: url('https://unsplash.com');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-overlay-badge {
+  position: absolute;
+  background-color: #3f669a; 
+  color: #ffffff;
+  padding: 8px 22px;
+  border-radius: 4px;
+  font-size: 13.5px;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.15);
+}
